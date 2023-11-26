@@ -1,0 +1,35 @@
+    
+    .navbar{
+        background-color: lightgray
+    }
+    .nav-item{
+        position: relative;
+        display: flex;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: left;
+        position: relative;
+    }
+    .nav-link{
+        background-color: blue;
+        box-sizing: border-box;
+        width: 25vh;
+        color: white;
+        position: relative;
+        /* justify-content: end; */
+        
+    } 
+    /* .collapse .navbar-collapse{
+        display: flex;
+        justify-content: center;
+    } */
+    .d-flex{
+        position: relative;
+    
+    }
+    .navbar-nav{
+        display: flex;
+    }
+   
+    

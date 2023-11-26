@@ -1,0 +1,30 @@
+<div class="main-table-div">
+    <div class="table-div">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">S/N</th>
+                    <th scope="col">Movie Tittle</th>
+                    <th scope="col">Release Date</th>
+                    <th scope="col">Popularrity</th>
+                    <th data-formatter="TableActions">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let favorite of movieArray; let i=index">
+                    <td scope="row">{{i+1}}</td>
+                    <td>
+                        {{favorite.title}}
+                    </td>
+                    <td>
+                        {{favorite.release_date | date:'MMM d, y'}}
+                    </td>
+                    <td>
+                        {{favorite.popularity}}
+                    </td>
+                    <div><button type="button" class="btn btn-danger" (click)="deleteMovie(favorite._id)">Remove</button></div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="first-container">
+        <div class="row productlist-first row-cols-5 g-3">
+            <div class="ng-container1" *ngFor="let movie of movieArray | paginate: { 
+                itemsPerPage: pageSize,
+                currentPage: page,
+                totalItems: count }; let i=index">
+
+                <div class="card">
+                    <img src="https://www.themoviedb.org/t/p/w220_and_h330_face{{movie.poster_path}}" alt="">
+                    <h6 class="title">{{movie.title}}</h6>
+                    <h6 class="title">{{movie.release_date | date:'MMM d, y'}}</h6>
+                    <div class="d-flex">
+                        <input type="checkbox" [(ngModel)]="movie.checked" (change)="checkAndUncheck(movie, $event)">
+                        <span for="">Add to favorites</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="pagination-div">
+    <pagination-controls (pageChange)="changePage(page = $event)"></pagination-controls>
+</div>
+
