@@ -38,3 +38,14 @@ thead, td, th, tbody{
     width: 90%;
     height: 60%;
 }
+
+.fav-back-btn-div{
+    text-align: center;
+}
+.fav-back-btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: whitesmoke;
+}

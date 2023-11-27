@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoviezService } from '../moviez.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fav-movies',
@@ -14,8 +15,9 @@ export class FavMoviesComponent {
   count: any
   movieArray: any =[]
   favorites: any =[]
+  router: any;
   constructor(
-    private mz: MoviezService
+    private mz: MoviezService,  router: Router
   ) {
     // let movies: any = sessionStorage.getItem(`favoriteMovies`)
     // this.movieArray = JSON.parse(movies)
@@ -53,11 +55,10 @@ export class FavMoviesComponent {
     })
   }
 
-  
-
   change(page: any) {    
     this.page = page
   }
+  
 }
 
 

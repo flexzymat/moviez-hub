@@ -54,3 +54,12 @@
 .card .star {
     width: 20px;
 }
+
+input[type=checkbox]{
+    accent-color: green;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}
