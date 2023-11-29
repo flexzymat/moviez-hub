@@ -20,9 +20,10 @@
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
 }
-.card{
+.card:hover{
     /* margin: 5px; */
     padding: 15px;
+    
 }
 .second-container{
     margin-top: 30px;
@@ -30,10 +31,6 @@
 .third-container{
     margin-top: 60px;
 }
-
-
-
-
 
 .card span {
     font-size: 12px;
@@ -62,4 +59,10 @@ input[type=checkbox]{
 .title{
     font-size: 15px;
     font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.date{
+    text-align: center;
 }

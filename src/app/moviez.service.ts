@@ -12,9 +12,7 @@ export class MoviezService {
   favMovieUrl = environment.apiUrl
   token = environment.bearer
 
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor( private http: HttpClient) { }
 
   fetchMovies(page:any) {
     const apiUrl = `${this.url}`;

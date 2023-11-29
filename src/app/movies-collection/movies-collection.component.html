@@ -9,7 +9,7 @@
 
                 <div class="card">
                     <img src="https://www.themoviedb.org/t/p/w220_and_h330_face{{movie.poster_path}}" alt="">
-                    <h5 style="color: red;" class="title">{{movie.title}}</h5>
+                    <h5  class="title">{{movie.title}}</h5>
                     <h6 class="date">{{movie.release_date | date:'MMM d, y'}}</h6>
                     <div class="d-flex">
                         <input type="checkbox" [(ngModel)]="movie.checked" (change)="checkAndUncheck(movie, $event)">
